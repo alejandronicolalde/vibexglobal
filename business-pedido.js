@@ -309,7 +309,12 @@ function renderOrder() {
   document.getElementById("orderTotalLabel").textContent = t.total;
   document.getElementById("orderTotal").textContent = formatMoney(total);
   document.getElementById("orderNotice").textContent = t.notice;
-  document.getElementById("orderSend").textContent = `${t.send} ↗`;
+  const sendButton = document.getElementById("orderSend");
+sendButton.textContent = `${t.send} `;
+const sendArrow = document.createElement("span");
+sendArrow.className = "arrow";
+sendArrow.setAttribute("aria-hidden", "true");
+sendButton.appendChild(sendArrow);
   document.getElementById("orderClear").textContent = t.clear;
 
   const itemsContainer = document.getElementById("orderItems");
