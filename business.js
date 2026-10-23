@@ -96,7 +96,7 @@ const PAGE_TEXT = {
     perfume: "Perfumería",
     electronics: "Electrónica",
     jewelry: "Joyería",
-    backStore: "Tienda principal ↗",
+    backStore: 	"Tienda principal <span class='arrow' aria-hidden='true'></span>",
     heroEyebrow: "VIBEX GLOBAL · MAYORISTA",
     heroImage: "[COLOCAR IMAGEN DE VIBEX BUSINESS AQUÍ]",
     heroTitle: "Tu visión merece una oportunidad.<br><em>Crezcamos juntos.</em>",
@@ -127,7 +127,7 @@ const PAGE_TEXT = {
     perfume: "Perfume",
     electronics: "Electronics",
     jewelry: "Jewelry",
-    backStore: "Main store ↗",
+    backStore: "Main store <span class='arrow' aria-hidden='true'></span>",
     heroEyebrow: "VIBEX GLOBAL · WHOLESALE",
     heroImage: "[ADD VIBEX BUSINESS IMAGE HERE]",
     heroTitle: "Your vision deserves an opportunity.<br><em>Let's grow together.</em>",
@@ -296,7 +296,7 @@ function renderBusinessProducts() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ${safeText(t.ask)} ↗
+          ${safeText(t.ask)} <span class="arrow" aria-hidden="true"></span>
         </a>
       </div>
     </article>
